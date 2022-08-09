@@ -1,4 +1,4 @@
-import 'package:gof_patterns_dart/gof_patterns/creational_patterns/factory_method/domain/pizza/pizza.dart';
+part of 'pizza.dart';
 
 /// Concrete product
 class MargaritaPizza extends Pizza {

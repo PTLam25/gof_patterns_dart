@@ -1,7 +1,10 @@
-import 'package:gof_patterns_dart/gof_patterns/creational_patterns/factory_method/domain/pizza/margarita_pizza.dart';
-import 'package:gof_patterns_dart/gof_patterns/creational_patterns/factory_method/domain/pizza/mexico_pizza.dart';
-import 'package:gof_patterns_dart/gof_patterns/creational_patterns/factory_method/domain/pizza/pizza_type.dart';
-import 'package:gof_patterns_dart/gof_patterns/creational_patterns/factory_method/domain/pizza/stella_pizza.dart';
+part 'margarita_pizza.dart';
+
+part 'mexico_pizza.dart';
+
+part 'pizza_type.dart';
+
+part 'stella_pizza.dart';
 
 /// Base product
 abstract class Pizza {
