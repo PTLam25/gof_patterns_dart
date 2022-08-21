@@ -3,6 +3,9 @@ import 'package:gof_patterns_dart/gof_patterns/creational_patterns/factory_metho
 /// Without the creator abstract class and multi concrete creators.
 /// Just having one class which create concrete product depends on enum argument.
 class PizzaSimplifiedFactoryMethod {
+  /// Prevent to creating instance of factory class
+  PizzaSimplifiedFactoryMethod._();
+
   static Pizza factoryMethod(PizzaType pizzaType) {
     switch (pizzaType) {
       case PizzaType.margarita:

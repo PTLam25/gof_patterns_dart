@@ -13,7 +13,7 @@ abstract class Pizza {
 
   Pizza({required this.name, required this.radius});
 
-  factory Pizza.factory(PizzaType pizzaType) {
+  factory Pizza.factoryMethod(PizzaType pizzaType) {
     switch (pizzaType) {
       case PizzaType.margarita:
         return MargaritaPizza(

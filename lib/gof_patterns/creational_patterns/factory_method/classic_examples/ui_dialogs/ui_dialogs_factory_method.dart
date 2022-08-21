@@ -1,38 +1,24 @@
-import 'dart:math';
-
+import 'package:gof_patterns_dart/gof_patterns/creational_patterns/factory_method/classic_examples/ui_dialogs/read_operation_system.dart';
 import 'package:gof_patterns_dart/gof_patterns/creational_patterns/factory_method/classic_examples/ui_dialogs/widgets/dialogs/dialog.dart';
-
-enum OSType {
-  web,
-  windows,
-  phone,
-}
-
-OSType readOSType() {
-  final random = Random();
-  final randomOSTypeIndex = random.nextInt(OSType.values.length);
-
-  return OSType.values[randomOSTypeIndex];
-}
 
 class Application {
   late final Dialog dialog;
 
   void initialize() {
-    final osType = readOSType();
+    final operationSystemType = readOperationSystemType();
 
-    switch (osType) {
-      case OSType.web:
+    switch (operationSystemType) {
+      case OperationSystemType.web:
         dialog = WebDialog();
         break;
-      case OSType.windows:
+      case OperationSystemType.windows:
         dialog = WindowsDialog();
         break;
-      case OSType.phone:
+      case OperationSystemType.phone:
         dialog = PhoneDialog();
         break;
       default:
-        throw UnsupportedError('Not support OS type $osType');
+        throw UnsupportedError('Not support OS type $operationSystemType');
     }
   }
 

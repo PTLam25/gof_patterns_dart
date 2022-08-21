@@ -6,6 +6,6 @@ class PhoneButton implements Button {
 
   @override
   void render() {
-    print('Render Phone rounded button.');
+    print('Render Phone button.');
   }
 }

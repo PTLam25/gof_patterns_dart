@@ -6,6 +6,6 @@ class WebButton implements Button {
 
   @override
   void render() {
-    print('Render Web squared button.');
+    print('Render Web button.');
   }
 }
